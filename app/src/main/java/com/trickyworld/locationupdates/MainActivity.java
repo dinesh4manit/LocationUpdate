@@ -207,6 +207,7 @@ public class MainActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(this,  new String[]{Manifest.permission.ACCESS_FINE_LOCATION,}, MY_FINE_LOCATION_REQUEST);
     }
 
+    // save location in file
     public void saveLocation(){
         File dir = new File(this.getFilesDir(), "trickyworld");
         if(!dir.exists()){
